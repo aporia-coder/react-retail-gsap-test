@@ -1,13 +1,20 @@
 import React from "react";
-import "./App.scss";
+import "./styles/App.scss";
 
 // Pages
 import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { HomesGrid } from "./pages/HomesGrid";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <div className="container">
+        <Home />
+        <About />
+        <HomesGrid />
+        <section className="section-four"></section>
+      </div>
     </div>
   );
 }

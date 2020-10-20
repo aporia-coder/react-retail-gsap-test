@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import House from "../assets/house1.png";
-import Skyscraper from "../assets/skyscraper.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 
 // Components
@@ -47,21 +46,9 @@ export const Home = () => {
       <section className="section-one">
         <div className="intro-text">
           <h1 ref={headingRef}>welcome to your dream home</h1>
-          {/* <p>
-            At SecondSunshine we make finding your next private chalet as easy
-            as possible
-          </p> */}
         </div>
         <img ref={houseRef} src={House} alt="house" className="house" />
       </section>
-      <section className="section-two">
-        <h5 className="test">about us</h5>
-        <div className="section-two-grid">
-          <h2>someshit to say</h2>
-          <img src={Skyscraper} alt="skyscraper" className="skyscraper" />
-        </div>
-      </section>
-      <section className="section-three"></section>
     </>
   );
 };
